@@ -7,11 +7,19 @@
     <title>Giphy Party App</title>
 </head>
 <body>
+    <small>Giphy Party App</small> 
     <form>
-        <label for="gif-search">Gif Search</label>
-        <input id="gif-search" type="search" name="searchingGif" palceholder="search gif here">
-    </form>
+        <!-- <label for="gif-search">Gif Search</label> -->
+        <input id="gifSearch" type="search" name="searchingGif" palceholder="search gif here">
 
+        <button type="submit" value="searchGIFF">Submit</button>
+        <button type="submit" id="getRid">Remove</button>
+    </form>
+    <!-- Need a place to hold gif -->
+    <div id="gifHere"> 
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src= "https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
     <scipt src="giphy.js"></scipt>
   
